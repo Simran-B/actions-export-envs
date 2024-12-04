@@ -36,4 +36,5 @@ jobs:
       - run: echo "dump outputs"
         env:
           ACTIONS_RUNTIME_TOKEN: ${{ steps.envs.outputs.ACTIONS_RUNTIME_TOKEN }}
+          ACTIONS_RUNTIME_URL: ${{ steps.envs.outputs.ACTIONS_RUNTIME_URL }}
           ACTIONS_CACHE_URL: ${{ steps.envs.outputs.ACTIONS_CACHE_URL }}
