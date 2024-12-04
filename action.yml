@@ -1,5 +1,5 @@
 name: 'GitHub Actions environments exporter'
-description: 'Exporting ACTIONS_RUNTIME_TOKEN and ACTIONS_CACHE_URL to enable the Docker layer caching on GitHub Actions.'
+description: 'Exports ACTIONS_RUNTIME_TOKEN, ACTIONS_RUNTIME_URL, and ACTIONS_CACHE_URL.'
 author: 'peaceiris'
 branding:
   icon: 'upload'
@@ -10,5 +10,7 @@ runs:
 outputs:
   ACTIONS_RUNTIME_TOKEN:
     description: 'ACTIONS_RUNTIME_TOKEN env'
+  ACTIONS_RUNTIME_URL:
+    description: 'ACTIONS_RUNTIME_URL env'
   ACTIONS_CACHE_URL:
     description: 'ACTIONS_CACHE_URL env'
